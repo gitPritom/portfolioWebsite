@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    /* background-color: rgb(0, 173, 136); */
+    position: absolute;
+    background-color:rgb(171, 171, 171);
+    /* width: 180px; */
+    font-family: 'Fira Sans', sans-serif; 
+    height: 150vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding : 29px;
+}
+.sidebar nav li{
+      list-style: none;
+      font-size: 14px;
+      padding: 30px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.main{
+    /* background-color: rgb(204, 254, 127); */
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+.infoContainer{
+    /* background-color: rgb(222, 202, 69); */
+    height: 70vh;
+    width: 72vw;
+    margin: 88px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+.Hello{
+     font-size: 2.5em;
+}
+
+.Name{
+    font-size: 2.3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif; 
+}
+.About{
+     font-size: 2.5em;
+}
+.moreAbout{
+    font-size: 2.2em;
+    font-family: 'Fira Sans', sans-serif; 
+    margin-top: 12px;
+}
+.buttons{
+    margin-top: 2.2em;
+    font-size: 9px;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(55, 156, 207);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size:10px;
+     margin:10px 0;
+     padding: 10px 9px;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(57, 114, 175);
+}
+.devPic img{
+    height: 70vh;
+}
+
+.contactform{
+    padding: 0 55px;
+    padding-top: 89px;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0 88px;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+}
+.contactform form div{
+   padding: 10px 0;
+   display: flex;
+   flex-direction: column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 6px;
+    padding: 3px;
+    margin: 6px 0 0 0;
+ }
+#emailHelp{
+    font-size: 9px;
+    color: midnightblue;
+    margin: 0 5px
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+
+#form-check input{
+   width:20px;
+   margin: 3px 0;
+}
+.blogContainer{
+    margin: 10px 88px;
+}
+.blogItem{
+    margin: 0px 20px;
+    font-family: 'Fira Sans', sans-serif; 
+}
+.blogItem p{
+    font-family: 'Source Code Pro', monospace;
+}
+.blogContainer h1{
+    margin: 18px;
+    font-family: 'Fira Sans', sans-serif; 
+}
+.intro{
+    margin: 10px 88px;
+}
+.intro h2{
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif; 
+    margin:10px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 12px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+     font-weight: bold;
+}
+.skillContainer{
+        margin: 10px;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: rgb(80, 219, 234);
+}
+.skill-t1{
+    width: 177px;
+    height: 6px;
+    background-color: rgb(223, 230, 109);
+}
+.skill-t2{
+    width: 139px;
+    height: 6px;
+    background-color: rgb(200, 40, 25);
+}
+.myPro{
+    margin: 10px;
+}
+.myProject{
+    font-family: 'Source Code Pro', monospace;
+
+}
+.sidebarGo{
+
+        transform: translate(-180px, 0px);
+        position: absolute;
+}
+.menubar{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 8px;
+   
+}
+.menu{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.cross{
+    margin-left: 90px;
+    margin-top: 6px;
+}
+@media (max-width: 1200px) {
+    .devPic{
+        display: none;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .buttons{
+        font-size: 5px;
+    }
+    /* *{
+        background-color: red;
+    } */
+    /* .sidebar{
+        transform: translate(-180px, 0px);
+        position: absolute;
+    } */
+    .contactform,.blogContainer,.intro{
+        margin: 45px 8px;
+    }
+  }
